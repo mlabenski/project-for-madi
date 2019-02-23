@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    <app-header></app-header>
+  </h1>
+  <button class="predictionBtn btn btn-primary"(click)="displayImage();" style="width: 25%">Damn check how cute we are</button>
+  <!-- Going to add changing images and such -->
+  <img class="center" [src]="image" *ngIf="display"/>
+ 
+  <app-calendar></app-calendar>
+</div>
+<div class="container">
+  <app-feelings></app-feelings>
+</div>
+
+<router-outlet></router-outlet>

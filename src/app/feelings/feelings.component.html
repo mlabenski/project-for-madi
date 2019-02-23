@@ -1,0 +1,32 @@
+<div style="padding-top: 50px;"><app-calendar [showMePartially]="showVar"></app-calendar></div>
+<div class="container">
+    <div class="row">
+<div class="col-sm">
+    <div class="card" style="width: 18rem; color: white; background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
+        <div class="card-body">
+          <h5 class="card-title">Missing me?</h5>
+          <p class="card-text">I'm definitely missing you too, so lets figure out when we can see each other, check out my calender!</p>
+          <a href="#" class="btn btn-primary" (click)="toggleChild()">Wanna hang out?</a>
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-sm">
+        <div class="card" style="width: 18rem; color: white; background: #ec008c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        ">
+            <div class="card-body">
+              <h5 class="card-title">Want some love?</h5>
+              <p class="card-text">Let me know when you need some more compliments, i can go on and on <3 </p>
+              <a href="#" class="btn btn-primary" (click)="compliment()">Let me tell ya something?</a>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+<app-compliment [showMessage]="showCompliment"></app-compliment>
