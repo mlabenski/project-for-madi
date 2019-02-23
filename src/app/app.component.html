@@ -3,6 +3,7 @@
   <h1>
     <app-header></app-header>
   </h1>
+
   <button class="predictionBtn btn btn-primary"(click)="displayImage();" style="width: 25%">Damn check how cute we are</button>
   <!-- Going to add changing images and such -->
   <img class="center" [src]="image" *ngIf="display"/>
@@ -11,6 +12,13 @@
 </div>
 <div class="container">
   <app-feelings></app-feelings>
+</div>
+<div style="margin-top: 50px;">
+    <button style="margin-top: 75px;" class="btn btn-primary"(click)="displayText();" style="width: 25%">About the project</button>
+    <h3 *ngIf="aboutText">I never thought I'd bring the relationship to a point where we are considering the worst.
+        Its been killing me that I havent found a solution to fix it, but I hope this project serves as the start of recovery. I want to prove my commitment to you and the life long benefits of staying together.
+      </h3>
+      <h3 *ngIf="aboutText">I hope I can continue building some cool features on here, wouldnt it be cool to simply check the calendar to see when we can see each other. I'd love that.</h3>
 </div>
 
 <router-outlet></router-outlet>

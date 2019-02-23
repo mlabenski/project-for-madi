@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
 .background {
-    background-color: #FFE0B5;
-
+    background-image: url("assets/front-page-images/export.png");
   }
   

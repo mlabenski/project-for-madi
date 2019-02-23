@@ -486,7 +486,7 @@
     border-color: transparent;
     border-style: solid; }
 
-    .background {
+    .backgroundText {
         background-color: white; 
         z-index: 100;
     }

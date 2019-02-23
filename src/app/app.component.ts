@@ -11,10 +11,15 @@ export class AppComponent {
   @Input() showMePartially: boolean;
   display: boolean = false;
   image: string;
+  aboutText; boolean = false;
 
   displayImage() {
     this.display = !this.display;
     this.image = this.imageSource[Math.floor(Math.random() * this.imageSource.length)];
+  }
+  displayText() {
+    this.aboutText = !this.aboutText;
+   
   }
 
   imageSource: string[] = [
